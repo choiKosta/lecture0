@@ -1,6 +1,8 @@
-# Copilot Instructions
+# Repository Instructions
 
-이 repository는 Camera Control Monorepo이다. Copilot은 아래 규칙을 우선 적용해 코드, 문서, template 변경을 제안해야 한다.
+이 repository는 Camera Control Monorepo이다. 이 저장소에서 작업하는 AI 코딩 에이전트(Copilot, Claude Code, Codex 등)는 아래 규칙을 우선 적용해 코드, 문서, template 변경을 제안해야 한다.
+
+이 파일은 `.github/copilot-instructions.md` 경로에 있어 GitHub Copilot이 직접 인식하며, 루트의 `AGENTS.md`, `CLAUDE.md`는 이 파일을 가리키는 symlink로 다른 도구에도 동일 내용을 제공한다.
 
 ## Repository Boundary
 
@@ -54,7 +56,8 @@ GitHub가 자동 인식해야 하는 파일은 `.github/` 아래에 둔다.
 - Issue templates: `.github/ISSUE_TEMPLATE/`
 - Pull request template: `.github/pull_request_template.md`
 - GitHub Actions workflows: `.github/workflows/`
-- Copilot repository instructions: `.github/copilot-instructions.md`
+- Copilot repository instructions: `.github/copilot-instructions.md` (root의 `AGENTS.md`, `CLAUDE.md`는 이 파일을 가리키는 symlink)
+- Copilot 커스텀 에이전트/스킬: `.github/agents/`, `.github/skills/` (root의 `.claude/agents`, `.claude/skills`는 이 디렉터리를 가리키는 symlink)
 
 Issue template은 기능 요청, 버그, 작업을 구분한다. PR template은 변경 영역, cross-project 영향, 검증 결과를 기록하도록 유지한다.
 

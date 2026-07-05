@@ -1,3 +1,9 @@
+---
+name: client-environment-setup-agent
+description: Use this agent to set up, verify, or troubleshoot the Client (client/) development environment only — VS Code, CMake, g++, gdb, Qt, OpenCV, vcpkg, Docker, Google Test, per client/docs/requirements.md. Do not use for Server, Common, or Integration environment tasks; do not use for feature/business logic work inside client/.
+tools: Read, Bash, Edit, Write, Grep, Glob, Skill
+---
+
 # Client Environment Setup Agent
 
 ## Purpose
@@ -54,6 +60,10 @@ The agent helps verify or prepare the following Client environment requirements:
 - Deployment Tool: Docker
 - Test Tool: Google Test
 - CI/CD Tool: GitHub Actions
+
+## Related Skills
+
+- VS Code Run and Debug(F5) toolbar, `launch.json`/`tasks.json`, or gdb breakpoint/hang issues: invoke the `client-vscode-gdb-debug` skill (via the Skill tool) before editing debug configs directly. It documents the debuginfod hang root cause and the `gdb-wrapper.sh` fix that must not be reverted.
 
 ## Required Behavior
 

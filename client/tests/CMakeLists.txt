@@ -1,11 +1,10 @@
 add_executable(camera_client_smoke_test
     smoke_test.cpp
-    ../src/system_info.cpp
 )
 
-target_include_directories(camera_client_smoke_test
+target_link_libraries(camera_client_smoke_test
     PRIVATE
-        ../include
+        camera_client_core
 )
 
 add_test(NAME camera_client_smoke_test COMMAND camera_client_smoke_test)

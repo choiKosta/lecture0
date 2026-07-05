@@ -1,5 +1,28 @@
 # Contributing
 
+## Repository Checkout (Symlinks)
+
+이 repository는 AI 코딩 에이전트 지침을 한 곳(`.github/copilot-instructions.md`, `.github/agents/`, `.github/skills/`)에만 두고, `AGENTS.md`, `CLAUDE.md`, `.claude/agents`, `.claude/skills`는 그 위치를 가리키는 **symlink**로 구성되어 있다. Linux/macOS/WSL에서는 별도 설정 없이 정상 동작한다.
+
+**Windows에서 직접 `git clone`/checkout하는 경우**(Server 팀), 아래를 미리 설정하지 않으면 symlink가 대상 경로 문자열이 담긴 일반 텍스트 파일로 체크아웃되어 Copilot/Claude 등 에이전트 지침이 깨질 수 있다.
+
+1. Windows 설정에서 "개발자 모드(Developer Mode)"를 켠다 (관리자 권한 없이 symlink 생성을 허용).
+2. symlink 지원을 켠 상태로 clone한다.
+
+   ```powershell
+   git config --global core.symlinks true
+   git clone -c core.symlinks=true <repo-url>
+   ```
+
+3. 이미 symlink 미지원 상태로 checkout했다면 아래로 재작성한다.
+
+   ```powershell
+   git config core.symlinks true
+   git checkout-index -a -f
+   ```
+
+Client/공통 도구 설정에는 영향이 없으며, Server 프로젝트(Java/Gradle) 빌드·실행 자체는 이 symlink들과 무관하다.
+
 ## Development Flow
 
 1. Issue를 생성하거나 기존 Issue를 선택한다.
