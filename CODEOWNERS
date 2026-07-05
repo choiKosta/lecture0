@@ -1,0 +1,10 @@
+# Replace @your-github-id or @your-org/team with the actual owner after creating
+# the GitHub repository.
+#
+# * @your-github-id
+# /client/ @your-org/client-team
+# /server/ @your-org/server-team
+# /common/ @your-org/client-team @your-org/server-team
+# /tests/integration/ @your-org/client-team @your-org/server-team
+# /docs/ @your-github-id
+# /.github/ @your-github-id

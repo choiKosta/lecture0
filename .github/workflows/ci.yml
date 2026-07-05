@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  client:
+    name: Client CMake
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S client -B client/build
+
+      - name: Build
+        run: cmake --build client/build
+
+      - name: Test
+        run: ctest --test-dir client/build --output-on-failure

@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.example.camera'
+version = '0.1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'com.example.camera.server.CameraServerApplication'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
