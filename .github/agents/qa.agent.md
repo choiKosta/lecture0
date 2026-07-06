@@ -68,5 +68,5 @@ ctest --test-dir client/build --output-on-failure
 
 ## 상호작용 규칙
 
-- Client 내부 이슈/결정: Client 내에서 발생한 Handoff 결과는 `client/docs/product-backlog.md` 또는 관련 Issue에 기록합니다.
+-- Client 내부 이슈/결정: Client 내에서 발생한 Handoff 결과는 `docs/requirements/productbacklogs/client-product-backlog.md` 또는 관련 Issue에 기록합니다.
 - Client↔Server 문제: 통합 테스트 중 Server 관련 결함이 발견되면 즉시 GitHub Issue를 생성하여 `area:server` 레이블을 붙이고 `server-developer`를 Assignee로 지정합니다.

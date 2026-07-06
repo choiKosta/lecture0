@@ -56,9 +56,10 @@
 
 ## 2. 요구사항 및 백로그
 
+
 ### 2.1 Client 요구사항
 
-- `client/docs/requirements.md`에 Client 책임 범위와 기능 요구사항 정의
+- `docs/requirements/requirements.md`에 Client 책임 범위와 기능 요구사항 정의
 - 핵심 기능
   - Server 접속 및 접속 상태 표시
   - RTSP/H.264 스트림 수신 및 화면 표시
@@ -67,9 +68,10 @@
 - 환경 요구사항
   - Ubuntu/WSL2, VS Code, g++, CMake, Qt, OpenCV, Google Test
 
+
 ### 2.2 Server 요구사항
 
-- `server/docs/requirements.md`에 Server 책임 범위와 기능 요구사항 정의
+- `docs/requirements/requirements.md`에 Server 책임 범위와 기능 요구사항 정의
 - 핵심 기능
   - RTSP/H.264 스트림 제공
   - Client 접속 요청 처리
@@ -80,9 +82,9 @@
 
 ### 2.3 분리된 Product Backlogs
 
-- `client/docs/product-backlog.md`
+- `docs/requirements/productbacklogs/client-product-backlog.md`
   - Client 연결/스트리밍/화면 제어/오류 표시/빌드 및 CI 백로그
-- `server/docs/product-backlog.md`
+- `docs/requirements/productbacklogs/server-product-backlog.md`
   - RTSP 스트리밍, 연결 관리, 제어 명령 처리, 오류 상태, 운영 환경 백로그
 
 ## 3. 시스템 아키텍처 요약

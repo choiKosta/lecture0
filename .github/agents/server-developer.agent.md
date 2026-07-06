@@ -41,7 +41,7 @@ tools: Read, Edit, Write, Grep, Glob
 	1. 작업 ID (예: `SR-3`)
 	2. 상세 설명 및 목적
 	3. Acceptance Criteria
-	4. 관련 문서 링크 (`server/docs/product-backlog.md`, `common/docs/interface_contract.md`)
+	4. 관련 문서 링크 (`docs/requirements/productbacklogs/server-product-backlog.md`, `common/docs/interface_contract.md`)
 	5. 레이블: `area:server`, `type:feature|bug|task`, `priority:...`
 	6. Assignee 지정
 
@@ -55,7 +55,7 @@ GitHub 이슈 생성 예시 (명령어, gh CLI 사용):
 
 ```bash
 gh issue create --title "SR-3: Frame Rate 제어 수신 및 검증" \
-	--body "- 작업 ID: SR-3\n- 설명: Client로부터 송신된 Frame Rate 제어 명령 수신 및 검증\n- Acceptance Criteria:\n  1. 명령 수신 가능\n  2. 범위 벗어난 값은 오류 응답\n- 관련 문서: server/docs/product-backlog.md, common/docs/interface_contract.md" \
+	--body "- 작업 ID: SR-3\n- 설명: Client로부터 송신된 Frame Rate 제어 명령 수신 및 검증\n- Acceptance Criteria:\n  1. 명령 수신 가능\n  2. 범위 벗어난 값은 오류 응답\n- 관련 문서: docs/requirements/productbacklogs/server-product-backlog.md, common/docs/interface_contract.md" \
 	--label "area:server" --label "type:feature" --label "priority:medium" --assignee "@server-developer"
 ```
 

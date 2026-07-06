@@ -33,12 +33,12 @@ tools: Read, Edit, Write, Grep, Glob
 ## 제약
 
 - 서버 측 구현을 변경하지 않습니다.
-- CI/CD 환경과 검증은 `client/docs/requirements.md`를 따릅니다.
+- CI/CD 환경과 검증은 `docs/requirements/requirements.md`를 따릅니다.
 
 ## 작업 수령(작업 Handoff 규약)
 
 - Scrum Master로부터 직접 Handoff를 받는 방법:
-	1. `scrum-master`는 `client/docs/product-backlog.md`에 작업을 추가하거나 `implement-task.prompt.md` 형식으로 `client-developer`에게 직접 전달합니다.
+	1. `scrum-master`는 `docs/requirements/productbacklogs/client-product-backlog.md`에 작업을 추가하거나 `implement-task.prompt.md` 형식으로 `client-developer`에게 직접 전달합니다.
 	2. 전달된 작업에는 `작업 ID`, `설명`, `Acceptance Criteria`, `우선순위`, `목표 스프린트`가 포함되어야 합니다.
 	3. `client-developer`는 수령 후 24시간 이내에 작업 수락 여부(수락/이견/추가질문)를 회신해야 합니다.
 	4. 작업 수락 시 해당 작업은 GitHub 이슈 또는 로컬 작업 브랜치(`client/<id>-<short>`)로 등록되어야 합니다.
@@ -55,4 +55,4 @@ tools: Read, Edit, Write, Grep, Glob
 	3. 관련 파일/문서 링크
 	4. 예상 산출물(예: PR, 테스트 케이스)
 
-- Handoff로 이루어진 결정은 24시간 내에 `client/docs/product-backlog.md` 또는 관련 GitHub Issue에 기록하여 변경 이력을 남겨야 합니다.
+-- Handoff로 이루어진 결정은 24시간 내에 `docs/requirements/productbacklogs/client-product-backlog.md` 또는 관련 GitHub Issue에 기록하여 변경 이력을 남겨야 합니다.

@@ -32,7 +32,7 @@ tools: Read, Edit, Write, Grep, Glob
 - 각 스프린트 시작 전에 반드시 지난 스프린트 결과를 보고합니다.
 - 지난 스프린트 결과를 바탕으로 Client/Server 제품 백로그를 수정합니다.
 - 수정된 백로그 내용을 사용자에게 보고하고 다음 스프린트 작업을 승인받습니다.
-- 백로그 수정 작업은 `client/docs/product-backlog.md`와 `server/docs/product-backlog.md`를 각각 갱신합니다.
+- 백로그 수정 작업은 `docs/requirements/productbacklogs/client-product-backlog.md`와 `docs/requirements/productbacklogs/server-product-backlog.md`를 각각 갱신합니다.
 
 ## Handoff 및 작업 지시 방식
 
@@ -41,11 +41,11 @@ tools: Read, Edit, Write, Grep, Glob
 	2. 작업 설명 및 목적
 	3. 수용 기준(Acceptance Criteria)
 	4. 우선순위 및 목표 스프린트
-	5. 관련 문서 링크 (`client/docs/product-backlog.md`, `requirements-guideline`)
+	5. 관련 문서 링크 (`docs/requirements/productbacklogs/client-product-backlog.md`, `requirements-guideline`)
 
 	Handoff 방법 예시:
 	- 에이전트 호출: `implement-task.prompt.md`를 사용하여 `client-developer` 에이전트에 직접 전달
-	- 백로그 업데이트: `client/docs/product-backlog.md`에 항목 추가 후 에이전트에 알림
+	- 백로그 업데이트: `docs/requirements/productbacklogs/client-product-backlog.md`에 항목 추가 후 에이전트에 알림
 
 - Server 관련 작업: Server 업무는 GitHub Issue 기반으로 지시합니다. `scrum-master`는 Server 작업을 아래 규격으로 GitHub에 이슈를 생성하고 `server-developer`에게 할당합니다.
 	1. 레이블: `type:feature`/`type:bug` 및 `area:server`
@@ -70,15 +70,15 @@ tools: Read, Edit, Write, Grep, Glob
 	- Acceptance Criteria:
 		1. 명령 수신 가능
 		2. 범위 벗어난 값은 오류 응답
-	- 관련 문서: `server/docs/product-backlog.md`, `common/docs/interface_contract.md`
+	- 관련 문서: `docs/requirements/productbacklogs/server-product-backlog.md`, `common/docs/interface_contract.md`
 
 
 ## 백로그 작성 정책
 
 - Client와 Server 프로젝트의 백로그를 분리하여 관리합니다.
-- Client 백로그는 `client/docs/product-backlog.md`에 작성합니다.
-- Server 백로그는 `server/docs/product-backlog.md`에 작성합니다.
-- 각각의 백로그는 `client/docs/requirements.md`와 `server/docs/requirements.md`에서 정의된 책임 범위와 기능 요구사항을 기준으로 생성합니다.
+-- Client 백로그는 `docs/requirements/productbacklogs/client-product-backlog.md`에 작성합니다.
+-- Server 백로그는 `docs/requirements/productbacklogs/server-product-backlog.md`에 작성합니다.
+- 각각의 백로그는 `docs/requirements/requirements.md`에서 정의된 책임 범위와 기능 요구사항을 기준으로 생성합니다.
 
 ## 제약
 

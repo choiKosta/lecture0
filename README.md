@@ -29,7 +29,7 @@
 
 ## Documents
 
-- System: [초기 요구사항](docs/requirements/initial_requirements.md), [아키텍처 개요](docs/architecture/overview.md), [프로젝트 관리](docs/project/project_management.md), [로드맵](docs/project/roadmap.md)
-- Client: [Client README](client/README.md), [Client 요구사항](client/docs/requirements.md)
-- Server: [Server README](server/README.md), [Server 요구사항](server/docs/requirements.md)
-- Common: [Common README](common/README.md), [Common 요구사항](common/docs/requirements.md), [Interface Contract](common/docs/interface_contract.md)
+-- System: [Requirements](docs/requirements/requirements.md), [아키텍처 개요](docs/architecture/overview.md), [프로젝트 관리](docs/project/project_management.md), [로드맵](docs/project/roadmap.md)
+-- Client: [Client README](client/README.md), [Requirements](docs/requirements/requirements.md)
+-- Server: [Server README](server/README.md), [Requirements](docs/requirements/requirements.md)
+-- Common: [Common README](common/README.md), [Requirements](docs/requirements/requirements.md), [Interface Contract](common/docs/interface_contract.md)

@@ -11,7 +11,7 @@
 
 절차:
 
-1. Sprint 계획 수립 중 `scrum-master`는 `client/docs/product-backlog.md` 내 항목을 검토 및 갱신합니다.
+1. Sprint 계획 수립 중 `scrum-master`는 `docs/requirements/productbacklogs/client-product-backlog.md` 내 항목을 검토 및 갱신합니다.
 2. Handoff 항목을 선택하여 다음 정보를 준비합니다:
    - 작업 ID, 제목
    - 작업 설명 및 목표
@@ -31,14 +31,14 @@ Acceptance Criteria:
   1. 스트림이 플레이된다.
   2. 재생 실패 시 사용자에게 오류 표시.
 Priority: high
-Related: client/docs/product-backlog.md
+Related: docs/requirements/productbacklogs/client-product-backlog.md
 ```
 
 ## Scrum Master → Server Developer (GitHub Issue 기반)
 
 절차:
 
-1. `scrum-master`는 `server/docs/product-backlog.md`에서 작업을 선택합니다.
+1. `scrum-master`는 `docs/requirements/productbacklogs/server-product-backlog.md`에서 작업을 선택합니다.
 2. GitHub 이슈를 생성하고 아래를 포함합니다:
    - 작업 ID, 설명, Acceptance Criteria
    - 레이블: `area:server`, `type:...`, `priority:...`
@@ -56,14 +56,14 @@ GitHub 이슈 템플릿(본문 예시):
 Acceptance Criteria:
   - 명령을 수신한다
   - 유효하지 않은 값은 오류 응답
-관련 문서: server/docs/product-backlog.md
+관련 문서: docs/requirements/productbacklogs/server-product-backlog.md
 ```
 
 명령줄 예시(gh CLI):
 
 ```bash
 gh issue create --title "SR-3: Frame Rate 제어 수신 및 검증" \
-  --body "작업 ID: SR-3\n설명: ...\nAcceptance Criteria: ...\n관련 문서: server/docs/product-backlog.md" \
+  --body "작업 ID: SR-3\n설명: ...\nAcceptance Criteria: ...\n관련 문서: docs/requirements/productbacklogs/server-product-backlog.md" \
   --label "area:server" --label "type:feature" --label "priority:medium" --assignee "@server-developer"
 ```
 
@@ -98,4 +98,4 @@ gh issue create --title "SR-3: Frame Rate 제어 수신 및 검증" \
 ## 참고
 
 - 요구사항 작성은 항상 `requirements-guideline` 스킬을 사용하여 형식과 품질 속성 연결을 검증하세요.
-- 변경 시 관련 문서(`client/docs/requirements.md`, `server/docs/requirements.md`, `common/docs/interface_contract.md`)를 업데이트하세요.
+- 변경 시 관련 문서(`docs/requirements/requirements.md`, `common/docs/interface_contract.md`)를 업데이트하세요.
