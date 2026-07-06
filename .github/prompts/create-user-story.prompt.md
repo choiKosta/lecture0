@@ -14,4 +14,6 @@ Please write a clear, concise user story using the following format:
   2. <criteria>
   3. <criteria>
 
+Note: If this user story affects both Client and Server, create a GitHub Issue for the Server side and reference it from this story. For Client-only stories, Handoff inside Client project is acceptable but must be recorded in `client/docs/product-backlog.md` within 24 hours.
+
 Use product requirements and quality attributes from `requirements-guideline`.
