@@ -47,3 +47,9 @@ tools: Read, Edit, Write, Grep, Glob, Skill
 - 각 단계는 역할별 책임에 맞게 진행해야 합니다.
 - 공통 인터페이스 변경은 `common/docs/interface_contract.md`를 먼저 업데이트합니다.
 - Client/Server ownership 규칙을 지킵니다.
+
+## 인터페이스 및 동기화 정책
+
+- 내부(같은 프로젝트, 예: Client 내) 에이전트 간 통신은 **Handoff**를 사용합니다. Handoff는 고맥락 전달(데모, 구현 세부 설명, 인계)을 위해 설계되며, 반드시 관련 이슈나 백로그 항목으로 24시간 내 문서화해야 합니다.
+- Client ↔ Server 간 통신(업무 지시, 인터페이스 변경, 작업 이력)은 **GitHub Issue**를 단일 진실원으로 사용합니다. 이슈는 표준 스키마(작업 ID, Acceptance Criteria, Owner, Labels, 관련 문서)를 따라야 하며 자동화 검증 워크플로우로 품질을 보장합니다.
+- Handoff로 합의된 결정은 이슈에 링크하거나 이슈로 전환하여 변경 이력을 남겨야 합니다.
